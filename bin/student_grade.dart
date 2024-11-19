@@ -10,6 +10,7 @@ class Student {
 class ScoreManager {
   List<Student> students = [];
 
+//학생 추가
   void addStudent() {
     stdout.write('학생 이름을 입력하세요: ');
     String? name = stdin.readLineSync();
@@ -25,6 +26,7 @@ class ScoreManager {
     }
   }
 
+// 학생 목록 출력
   void studentList() {
     if (students.isEmpty) {
       print('학생목록이 비어 있습니다.');
@@ -36,6 +38,7 @@ class ScoreManager {
     }
   }
 
+// 평균 점수 계산
   void scoreAver() {
     if (students.isEmpty) {
       print('학생 데이터가 없습니다.');
@@ -54,7 +57,7 @@ void main() {
   bool isTerminated = false;
 
   while (!isTerminated) {
-    print('/n학생 성적 관리 프로그램');
+    print('\n학생 성적 관리 프로그램');
     print('1. 학생 추가');
     print('2. 학생 목록 출력');
     print('3. 평균 점수 계산');
