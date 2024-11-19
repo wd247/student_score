@@ -1,3 +1,1 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
-// 으아아아아아
+각 코드에 주석 달기
